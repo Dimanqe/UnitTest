@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace UserTicketService
 {
-    public class Calculator
+    public interface ITicketService
     {
-        public int Add(int one, int two)
-        {
-
-            return one + two;
-        }
+        int GetTicketPrice(int ticketId);
     }
 }
